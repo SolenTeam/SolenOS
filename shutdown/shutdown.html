@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolenOS - Shutdown</title>
+    <link rel="stylesheet" href="shutdown.css">
+</head>
+<body>
+    <div class="shutdown-container">
+        <div class="shutdown-message">SolenOS has been shut down</div>
+        <div class="power-button-container">
+            <button class="power-button" id="restartBtn"></button>
+        </div>
+    </div>
+
+    <script>
+        // Shutdown button functionality - just stays on shutdown screen
+        const restartBtn = document.getElementById('restartBtn');
+        restartBtn.addEventListener('click', () => {
+            // Save current settings to localStorage before restarting
+            const existingSettings = localStorage.getItem('solenos-settings');
+            if (!existingSettings) {
+                // Default settings
+                localStorage.setItem('solenos-settings', JSON.stringify({
+                    theme: 'modern',
+                    wallpaper: 'default',
+                    language: 'en'
+                }));
+            }
+
+            // Redirect to startup page when power button is clicked
+            window.location.href = '../startup/startup.html';
+        });
+    </script>
+</body>
+</html>

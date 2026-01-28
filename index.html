@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolenOS - Lightweight Operating System</title>
+    <link rel="stylesheet" href="main/solenos.css">
+</head>
+<body>
+    <div class="os-container">
+        <!-- Desktop -->
+        <div class="desktop">
+            <div class="icon">
+                <div class="icon-emoji">📁</div>
+                <span>Files</span>
+            </div>
+            <div class="icon">
+                <div class="icon-emoji">🌐</div>
+                <span>Browser</span>
+            </div>
+            <div class="icon">
+                <div class="icon-emoji">⚙️</div>
+                <span>Settings</span>
+            </div>
+            <div class="icon">
+                <div class="icon-emoji">💻</div>
+                <span>Terminal</span>
+            </div>
+            <div class="icon">
+                <div class="icon-emoji">🔢</div>
+                <span>Calculator</span>
+            </div>
+            <div class="icon">
+                <div class="icon-emoji">📝</div>
+                <span>Text Editor</span>
+            </div>
+        </div>
+
+        <!-- Taskbar -->
+        <div class="taskbar">
+            <div class="start-button">SolenOS</div>
+            <div class="taskbar-icons">
+                <div class="task-icon">Files</div>
+                <div class="task-icon">Browser</div>
+                <div class="task-icon">Settings</div>
+            </div>
+            <div class="system-info">
+                <span class="date-display">Monday, January 1, 2023</span>
+                <span class="time">10:30 AM</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="main/functions/core-functions.js"></script>
+    <script src="main/apps/application-functions.js"></script>
+    <script src="main/solenos-init.js"></script>
+    <script>
+        // Load saved settings when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.solenOS) {
+                const savedSettings = localStorage.getItem('solenos-settings');
+                if (savedSettings) {
+                    const settings = JSON.parse(savedSettings);
+
+                    // Apply the saved theme
+                    if (settings.theme) {
+                        window.solenOS.applyTheme(settings.theme);
+                    }
+
+                    // Apply the saved wallpaper
+                    if (settings.wallpaper) {
+                        window.solenOS.applyWallpaper(settings.wallpaper);
+                    }
+
+                    // Apply the saved language
+                    if (settings.language) {
+                        window.solenOS.applyLanguage(settings.language);
+
+                        // Update the language selector in the settings app if it exists
+                        window.solenOS.currentLanguage = settings.language;
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

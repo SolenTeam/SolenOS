@@ -298,7 +298,7 @@ class SolenOS {
             startMenu.querySelector('.restart-btn').addEventListener('click', () => {
                 if (confirm('SolenOS Restart Confirmation\n\nDear User,\n\nAre you sure you want to restart SolenOS?\n\nThis will close all applications and restart the system.\n\nClick "OK" to restart or "Cancel" to return to SolenOS.')) {
                     // Redirect to restart page
-                    window.location.href = '../restart/restart.html';
+                    window.location.href = 'restart/restart.html';
                 }
             });
 
@@ -306,7 +306,7 @@ class SolenOS {
             startMenu.querySelector('.shutdown-btn').addEventListener('click', () => {
                 if (confirm('SolenOS Personal Shutdown Message\n\nDear User,\n\nAre you sure you want to shutdown SolenOS?\n\nThis will close all applications and end your session.\n\nClick "OK" to shutdown or "Cancel" to return to SolenOS.')) {
                     // Redirect to shutdown page
-                    window.location.href = '../shutdown/shutdown.html';
+                    window.location.href = 'shutdown/shutdown.html';
                 }
             });
 
@@ -324,7 +324,7 @@ class SolenOS {
                 }
 
                 // Redirect to restart page
-                window.location.href = '../restart/restart.html';
+                window.location.href = 'restart/restart.html';
             };
         }
 
@@ -412,14 +412,14 @@ class SolenOS {
         switch(wallpaper) {
             case 'mountain':
                 body.classList.add('wallpaper-mountain');
-                body.style.background = 'url("../wallpapers/mountain_wallpaper.png")';
+                body.style.background = 'url("./wallpapers/mountain_wallpaper.png")';
                 body.style.backgroundSize = 'cover';
                 body.style.backgroundPosition = 'center';
                 body.style.backgroundRepeat = 'no-repeat';
                 break;
             case 'ocean':
                 body.classList.add('wallpaper-ocean');
-                body.style.background = 'url("../wallpapers/ocean_wallpaper.png")';
+                body.style.background = 'url("./wallpapers/ocean_wallpaper.png")';
                 body.style.backgroundSize = 'cover';
                 body.style.backgroundPosition = 'center';
                 body.style.backgroundRepeat = 'no-repeat';

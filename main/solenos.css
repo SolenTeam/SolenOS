@@ -178,6 +178,68 @@ body {
     height: 46px; /* Fixed height for consistent alignment */
 }
 
+/* Theme-specific styles for window headers */
+body.theme-light .window-header,
+.window-header.theme-light {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+}
+
+body.theme-dark .window-header,
+.window-header.theme-dark {
+    background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+    color: white;
+}
+
+body.theme-blue .window-header,
+.window-header.theme-blue {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+body.theme-modern .window-header,
+.window-header.theme-modern {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* Theme-specific styles for other UI elements */
+body.theme-light .start-button {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+}
+
+body.theme-dark .start-button {
+    background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+    color: white;
+}
+
+body.theme-blue .start-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+body.theme-modern .start-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+body.theme-light .taskbar {
+    background: rgba(245, 247, 250, 0.15);
+}
+
+body.theme-dark .taskbar {
+    background: rgba(44, 62, 80, 0.15);
+}
+
+body.theme-blue .taskbar {
+    background: rgba(102, 126, 234, 0.15);
+}
+
+body.theme-modern .taskbar {
+    background: rgba(102, 126, 234, 0.15);
+}
+
 .window-title {
     font-weight: 600;
     font-size: 14px;
@@ -229,6 +291,23 @@ body {
     overflow: auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.7);
+}
+
+/* Theme-specific styles for window bodies */
+body.theme-light .window-body {
+    background: rgba(245, 247, 250, 0.7);
+}
+
+body.theme-dark .window-body {
+    background: rgba(44, 62, 80, 0.7);
+}
+
+body.theme-blue .window-body {
+    background: rgba(102, 126, 234, 0.7);
+}
+
+body.theme-modern .window-body {
+    background: rgba(102, 126, 234, 0.7);
 }
 
 /* App content styling */

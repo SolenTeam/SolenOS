@@ -1,4 +1,4 @@
-# 🌞 SolenOS
+# SolenOS
 A tiny, lightning-fast, fully customizable OS — built just for fun, experiments, and pure curiosity.
 
 SolenOS boots fast, installs fast, and lets you tweak almost everything.  

@@ -46,8 +46,8 @@ They’re all super small and easy to modify — perfect for experimenting.
    npm install
    ```
 
-5. If you get errors (it happens!), try:
-   ```bash
+5. If you get errors (should happen), try:
+   ```
    npm audit fix --force
    ```
 

@@ -42,7 +42,7 @@ They’re all super small and easy to modify — perfect for experimenting.
    `PS C:\Users\YourName\Downloads\SolenOS-2.00.0>`
 
 4. Run:
-   ```bash
+   ```
    npm install
    ```
 
@@ -52,7 +52,7 @@ They’re all super small and easy to modify — perfect for experimenting.
    ```
 
 6. Then start SolenOS:
-   ```bash
+   ```
    .\start.bat
    ```
 

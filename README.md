@@ -61,3 +61,8 @@ They’re all super small and easy to modify — perfect for experimenting.
 ---
 
 Want help writing a launch post, adding badges, or making a web demo? Type it in the issues or in a discussion and i will answer. 
+
+
+---
+
+_The software is provided with [AGPL-3.0 license]()_

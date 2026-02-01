@@ -65,4 +65,4 @@ Want help writing a launch post, adding badges, or making a web demo? Type it in
 
 ---
 
-_The software is provided with [AGPL-3.0 license]()_
+_The software is provided with [AGPL-3.0 license](https://github.com/SolenTeam/SolenOS/blob/main/LICENSE)_
